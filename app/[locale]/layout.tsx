@@ -6,17 +6,16 @@ import initTranslations from "@/lib/i18n"
 import { Database } from "@/supabase/types"
 import { createServerClient } from "@supabase/ssr"
 import { Metadata, Viewport } from "next"
-import { Inter } from "next/font/google"
 import { cookies } from "next/headers"
 import { ReactNode } from "react"
 import "./globals.css"
 import { screenStyle } from "@/components/ui/styles"
 
 // const inter = Inter({ subsets: ["latin"] })
-const APP_NAME = "Vellum"
-const APP_DEFAULT_TITLE = "Vellum"
-const APP_TITLE_TEMPLATE = "%s - Vellum"
-const APP_DESCRIPTION = "Vellum PWA!"
+const APP_NAME = "Vaultify"
+const APP_DEFAULT_TITLE = "Vaultify"
+const APP_TITLE_TEMPLATE = "%s - Vaultify"
+const APP_DESCRIPTION = "Vaultify PWA!"
 
 interface RootLayoutProps {
   children: ReactNode

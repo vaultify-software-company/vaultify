@@ -78,7 +78,7 @@ export const useChatHandler = () => {
   } = useContext(ChatbotUIContext)
 
   const chatInputRef = useRef<HTMLTextAreaElement>(null)
-  const vellum = Cookies.get("vellum")
+  const vault = Cookies.get("vellum")
   const talk_with_file_mode = Cookies.get("talk_with_file_mode")
 
   useEffect(() => {
@@ -211,7 +211,7 @@ export const useChatHandler = () => {
         fileItems: []
       }
 
-      setSelectedAssistant(null)
+      // setSelectedAssistant(null)
 
       setChatSettings({
         model: chatSettings?.model! as LLMID,
@@ -267,7 +267,7 @@ export const useChatHandler = () => {
 
       console.log({ chatSettings })
 
-      if (vellum || talk_with_file_mode) {
+      if (vault || talk_with_file_mode) {
         setToolInUse("retrieval")
         console.log({ chatSettings: chatSettings?.prompt })
 

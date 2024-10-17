@@ -8,16 +8,11 @@
   font-family: "MuseoSans-500";
   src: url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.eot");
   src:
-    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.eot?#iefix")
-      format("embedded-opentype"),
-    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.woff2")
-      format("woff2"),
-    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.woff")
-      format("woff"),
-    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.ttf")
-      format("truetype"),
-    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.svg#MuseoSans-500")
-      format("svg");
+    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.eot?#iefix") format("embedded-opentype"),
+    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.woff2") format("woff2"),
+    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.woff") format("woff"),
+    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.ttf") format("truetype"),
+    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.svg#MuseoSans-500") format("svg");
 }
 
 * {
@@ -26,24 +21,28 @@
 
 /* Custom Toolbar Background Color */
 .ql-toolbar.ql-snow {
-  background-color: #ffffff; /* Replace with your desired color */
+  background-color: #ffffff;
+  /* Replace with your desired color */
 }
 
 /* Custom Button Color */
 .ql-snow .ql-stroke {
-  stroke: #ffffff; /* Replace with your desired color */
+  stroke: #ffffff;
+  /* Replace with your desired color */
 }
 
 /* Custom Button Hover Color */
 .ql-snow .ql-picker-label:hover,
 .ql-snow .ql-picker-options .ql-picker-item:hover {
-  color: #004267; /* Replace with your desired color */
+  color: #004267;
+  /* Replace with your desired color */
 }
 
 /* Custom Dropdown Text Color */
 .ql-snow .ql-picker-label,
 .ql-snow .ql-picker-options .ql-picker-item {
-  color: #0A324A; /* Replace with your desired color */
+  color: #0A324A;
+  /* Replace with your desired color */
 }
 
 
@@ -157,6 +156,7 @@
 .ant-modal-content {
   @apply bg-background !important;
 }
+
 .anticon svg {
   @apply fill-primary dark:fill-white !important;
 }
@@ -165,6 +165,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply text-foreground;
     @apply bg-bodybackground;

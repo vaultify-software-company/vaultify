@@ -5,16 +5,16 @@ import { IconToggleLeft, IconToggleRight } from "@tabler/icons-react"
 import { ChatbotUIContext } from "@/context/context"
 
 interface ToggleStatus {
-  vellum: boolean
+  vault: boolean
   handleToggleClick: (value: boolean) => void // Updated type for handleToggleClick
 }
 
-export const Vellum: FC<ToggleStatus> = ({ vellum, handleToggleClick }) => {
+export const Vault: FC<ToggleStatus> = ({ vault, handleToggleClick }) => {
   const { chatSettings } = useContext(ChatbotUIContext)
 
   return (
     <div>
-      {vellum === true ? (
+      {vault === true ? (
         <IconToggleRight
           className="cursor-pointer p-0 text-green-500 transition-all duration-500 hover:opacity-50"
           size={32}

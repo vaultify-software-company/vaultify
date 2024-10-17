@@ -28,7 +28,7 @@ import { LLMID } from "@/types"
 import Cookies from "js-cookie"
 import { Image as AntImage } from "antd"
 import googleGeminiLogo from "../../public/google-gemini-logo.svg"
-import { Vellum } from "../ui/toggle-status"
+import { Vault } from "../ui/toggle-status"
 import { AudioTwoTone, AudioOutlined, SoundOutlined } from "@ant-design/icons"
 import { getOrganizationById } from "@/db/organizations"
 
@@ -72,11 +72,9 @@ export const ChatInput: FC<ChatInputProps> = ({}) => {
     assistantImages,
     useVellum,
     setSelectedAssistant,
-    setAssistants,
     setChatSettings,
     setToolInUse,
     setUseVellum,
-    toolInUse,
     organization
   } = useContext(ChatbotUIContext)
 
@@ -269,7 +267,7 @@ export const ChatInput: FC<ChatInputProps> = ({}) => {
     }
 
     // Show toast notification based on the action
-    toast[value ? "success" : "error"](`Vellum ${action}`)
+    toast[value ? "success" : "error"](`Vault ${action}`)
   }
 
   return (
@@ -342,8 +340,8 @@ export const ChatInput: FC<ChatInputProps> = ({}) => {
           fontSize: "small"
         }}
       >
-        <p>Search information from Vellum database</p>
-        <Vellum vellum={useVellum} handleToggleClick={handleToggleClick} />
+        <p>Search information from Vaultify database</p>
+        <Vault vault={useVellum} handleToggleClick={handleToggleClick} />
       </div>
 
       <div className="border-input relative mt-3 flex min-h-[60px] w-full items-center justify-center rounded-xl border-2">
@@ -369,9 +367,7 @@ export const ChatInput: FC<ChatInputProps> = ({}) => {
           textareaRef={chatInputRef}
           className="ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring text-md flex w-full resize-none rounded-md border-none bg-transparent py-2 pr-14 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
           placeholder={
-            useVellum
-              ? t(`Ask Vellum assistant anything`)
-              : t(`Ask LLM assistant anything`)
+            useVellum ? t(`Ask Vaultify anything`) : t(`Ask GPT anything`)
           }
           onValueChange={handleInputChange}
           value={userInput}

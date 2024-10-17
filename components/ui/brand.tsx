@@ -15,7 +15,7 @@ export const Brand: FC<BrandProps> = () => {
   return (
     <Link
       className="flex cursor-pointer flex-col items-center hover:opacity-50"
-      href="https://vallum-llm-chatbot.vercel.app/"
+      href="https://vaultify-two.vercel.app/"
       target="_blank"
       rel="noopener noreferrer"
     >

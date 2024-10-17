@@ -747,7 +747,9 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
 
             <WithTooltip
               display={
-                <div>Download Vellum 1.0 data as JSON. Import coming soon!</div>
+                <div>
+                  Download Vaultify 1.0 data as JSON. Import coming soon!
+                </div>
               }
               trigger={
                 <IconFileDownload

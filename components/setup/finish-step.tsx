@@ -8,11 +8,11 @@ export const FinishStep: FC<FinishStepProps> = ({ displayName }) => {
   return (
     <div className="space-y-4">
       <div>
-        Welcome to Vellum
+        Welcome to Vaultify
         {displayName.length > 0 ? `, ${displayName.split(" ")[0]}` : null}!
       </div>
 
-      <div>Click next to start chatting.</div>
+      <div>Click next to start.</div>
     </div>
   )
 }

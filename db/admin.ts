@@ -35,7 +35,7 @@ export const createUser = async (userData: {
       const { error: emailError } = await adminAuthClient.inviteUserByEmail(
         data.user.email,
         {
-          redirectTo: "https://vallum-llm-chatbot.vercel.app/"
+          redirectTo: "https://vaultify-two.vercel.app/"
         }
       )
 
