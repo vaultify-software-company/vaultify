@@ -1,0 +1,12 @@
+{
+  "options": [
+    "Factually Incorrect",
+    "Wrong Reference Document(s)",
+    "Didn’t answer",
+    "Didn’t follow instructions",
+    "Confusing Response",
+    "Not enough detail",
+    "Too much detail",
+    "Other"
+  ]
+}

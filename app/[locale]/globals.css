@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://db.onlinewebfonts.com/c/16697a764b01cdcc691b05f001046bc3?family=MuseoSans-500);
+
+@font-face {
+  font-family: "MuseoSans-500";
+  src: url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.eot");
+  src:
+    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.eot?#iefix")
+      format("embedded-opentype"),
+    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.woff2")
+      format("woff2"),
+    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.woff")
+      format("woff"),
+    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.ttf")
+      format("truetype"),
+    url("/MuseoSans-500/web-fonts/16697a764b01cdcc691b05f001046bc3.svg#MuseoSans-500")
+      format("svg");
+}
+
+* {
+  font-family: "MuseoSans-500";
+}
+
+/* Custom Toolbar Background Color */
+.ql-toolbar.ql-snow {
+  background-color: #ffffff; /* Replace with your desired color */
+}
+
+/* Custom Button Color */
+.ql-snow .ql-stroke {
+  stroke: #ffffff; /* Replace with your desired color */
+}
+
+/* Custom Button Hover Color */
+.ql-snow .ql-picker-label:hover,
+.ql-snow .ql-picker-options .ql-picker-item:hover {
+  color: #004267; /* Replace with your desired color */
+}
+
+/* Custom Dropdown Text Color */
+.ql-snow .ql-picker-label,
+.ql-snow .ql-picker-options .ql-picker-item {
+  color: #0A324A; /* Replace with your desired color */
+}
+
+
+
+
+.downloadButton {
+  /* Example of hiding the title text */
+  color: transparent;
+  background-color: transparent;
+  border: none;
+}
+
+.ant-anchor-link {
+  padding: 0 !important;
+  color: #ffffff !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #f2f2f2;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 0 0% 63.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 202, 100%, 20%;
+    --foreground: 0 0% 98%;
+
+    --muted: 200 75% 16.5%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --popover: 202, 100%, 20%;
+    --popover-foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --border: 0, 0%, 100%;
+    --input: 0, 0%, 100%;
+
+    --primary: 203, 76%, 16%;
+    --primary-foreground: 0, 0%, 100%;
+
+    --secondary: 203, 75%, 13%;
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 203, 76%, 16%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 200 75% 16.5%;
+    --destructive-foreground: 0 85.7% 97.3%;
+
+    --ring: 0 0% 14.9%;
+    --bodybackground: 203, 76%, 16%;
+  }
+}
+
+.ant-modal-content {
+  @apply bg-background !important;
+}
+.anticon svg {
+  @apply fill-primary dark:fill-white !important;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-foreground;
+    @apply bg-bodybackground;
+  }
+}

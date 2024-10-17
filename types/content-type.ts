@@ -1,0 +1,12 @@
+export type ContentType =
+  | "chats"
+  | "profiles"
+  | "presets"
+  | "prompts"
+  | "files"
+  | "collections"
+  | "assistants"
+  | "tools"
+  | "models"
+  | "matcher"
+  | "customKnowledgeBase"

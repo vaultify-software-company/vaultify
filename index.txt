@@ -1,0 +1,13 @@
+BEGIN
+  RETURN QUERY
+  SELECT
+    id,
+    file_id,
+    'file name:' || file_name || ' file path:' || file_path || ', content:' || content AS content,
+    tokens,
+    1 - (file_items.local_embedding <=> query_embedding) AS similarity
+  FROM file_items
+  WHERE (file_id = ANY(file_ids))
+  ORDER BY file_items.local_embedding <=> query_embedding
+  LIMIT match_count;
+END;
